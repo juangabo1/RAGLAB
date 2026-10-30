@@ -4619,3 +4619,439 @@ pre {
     padding: 6px 5px;
   }
 }
+
+.agenda-capstone {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.72fr) minmax(0, 1.8fr);
+  gap: 20px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 22px 24px;
+  border: 1px solid #cfe4d8;
+  border-radius: 22px;
+  background: linear-gradient(120deg, #edf7f2, rgba(255, 255, 255, 0.88));
+}
+
+.agenda-capstone-heading {
+  display: grid;
+  gap: 5px;
+}
+
+.agenda-capstone-heading .timeline-label {
+  color: #28735e;
+}
+
+.agenda-capstone-heading > strong {
+  font-size: 1.02rem;
+  line-height: 1.4;
+}
+
+.agenda-capstone ol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.agenda-capstone li {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 9px;
+  align-items: start;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.agenda-capstone li > span {
+  color: #28735e;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+}
+
+.final-project-panel {
+  --final-accent: #28735e;
+  --final-soft: #edf7f2;
+  position: relative;
+  background:
+    radial-gradient(ellipse at 100% 0, rgba(40, 115, 94, 0.08), transparent 34%),
+    var(--panel);
+}
+
+.final-project-panel > .section-kicker {
+  color: var(--final-accent);
+}
+
+.final-project-panel > h3 {
+  max-width: 980px;
+  margin-bottom: 12px;
+}
+
+.final-project-panel > .support-intro {
+  max-width: 920px;
+  margin-bottom: 24px;
+}
+
+.final-project-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.final-project-timeline article {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-top: 3px solid #77ad96;
+  border-radius: 18px;
+  background: linear-gradient(150deg, #f2f8f4, rgba(255, 255, 255, 0.9) 65%);
+}
+
+.final-project-timeline article > span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--final-accent);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.77rem;
+  font-weight: 700;
+}
+
+.final-project-timeline strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.97rem;
+}
+
+.final-project-timeline p,
+.final-project-demo > div > p,
+.final-project-heading > p,
+.final-project-publish > div > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.58;
+}
+
+.final-project-demo,
+.final-project-publish {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(240px, 0.72fr);
+  gap: 24px;
+  align-items: start;
+  margin-top: 30px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.final-project-panel .timeline-label {
+  color: var(--final-accent);
+}
+
+.final-project-demo h4,
+.final-project-publish h4,
+.final-project-heading h4 {
+  margin: 5px 0 9px;
+  font-size: 1.12rem;
+}
+
+.final-project-demo .steps,
+.final-project-publish .steps {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.final-project-prompt-sequence {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 18px;
+  margin-top: 20px;
+}
+
+.final-project-prompt-sequence h5,
+.final-project-prompt-sequence > p {
+  grid-column: 1 / -1;
+}
+
+.final-project-prompt-sequence h5 {
+  margin: 0;
+  font-size: 0.96rem;
+}
+
+.final-project-prompt-sequence .command-block {
+  margin-top: 0;
+}
+
+.final-project-prompt-sequence > p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.final-project-transition {
+  margin-top: 34px;
+  padding: 22px 24px;
+  border-left: 4px solid #77ad96;
+  border-radius: 0 18px 18px 0;
+  background: var(--final-soft);
+}
+
+.final-project-transition .timeline-label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.final-project-transition h4 {
+  margin: 0 0 5px;
+  font-size: 1.12rem;
+}
+
+.final-project-transition p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.final-project-student-tips {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.final-project-student-tips article {
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.final-project-student-tips strong {
+  font-size: 0.9rem;
+}
+
+.final-project-student-tips p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.52;
+}
+
+.final-project-data-note {
+  padding: 18px;
+  border: 1px solid #d5e8dc;
+  border-radius: 16px;
+  background: var(--final-soft);
+}
+
+.final-project-data-note strong {
+  color: #205e4c;
+}
+
+.final-project-data-note p {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.58;
+}
+
+.final-project-minimum,
+.final-project-prompts {
+  margin-top: 30px;
+}
+
+.final-project-heading {
+  margin-bottom: 16px;
+}
+
+.final-project-heading > p {
+  max-width: 820px;
+}
+
+.final-project-deliverables {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.final-project-deliverables article {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 5px 10px;
+  align-content: start;
+  padding: 17px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.final-project-deliverables article > span {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  grid-row: span 2;
+  border-radius: 9px;
+  background: var(--final-soft);
+  color: var(--final-accent);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.final-project-deliverables strong {
+  align-self: center;
+  font-size: 0.9rem;
+}
+
+.final-project-deliverables p {
+  grid-column: 2;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.final-project-prompts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 18px;
+  align-items: start;
+}
+
+.final-project-prompts > .final-project-heading {
+  grid-column: 1 / -1;
+}
+
+.final-project-prompt {
+  min-width: 0;
+  margin-top: 0;
+  padding: 20px;
+}
+
+.final-project-prompt:last-child {
+  grid-column: 1 / -1;
+}
+
+.final-project-prompt .command-head {
+  align-items: flex-start;
+}
+
+.final-project-prompt .command-head h4 {
+  max-width: 78%;
+  font-size: 0.94rem;
+  line-height: 1.4;
+}
+
+.final-project-prompt pre {
+  color: #e0e6f1;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.final-project-publish {
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  border-color: #cfe4d8;
+  background: linear-gradient(120deg, #edf7f2, rgba(255, 255, 255, 0.9));
+}
+
+.final-project-run {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+  gap: 20px;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.final-project-run h4 {
+  margin: 5px 0 8px;
+  font-size: 1.05rem;
+}
+
+.final-project-run > div:first-child > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.58;
+}
+
+.final-project-run-command {
+  margin: 0;
+}
+
+.final-project-run-command pre {
+  font-size: 0.86rem;
+}
+
+.final-project-showcase {
+  display: grid;
+  gap: 5px;
+  margin-top: 20px;
+  padding: 18px 20px;
+  border-left: 4px solid #77ad96;
+  border-radius: 0 15px 15px 0;
+  background: var(--final-soft);
+}
+
+.final-project-showcase strong {
+  color: #205e4c;
+}
+
+.final-project-showcase span {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.final-project-pages-link {
+  margin: 10px 0 0;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1100px) {
+  .final-project-timeline,
+  .final-project-deliverables,
+  .final-project-student-tips {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .final-project-demo,
+  .final-project-publish,
+  .final-project-run {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .agenda-capstone {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .agenda-capstone {
+    padding: 18px;
+  }
+
+  .agenda-capstone ol,
+  .final-project-timeline,
+  .final-project-deliverables,
+  .final-project-student-tips,
+  .final-project-prompt-sequence,
+  .final-project-prompts {
+    grid-template-columns: 1fr;
+  }
+
+  .final-project-prompts > .final-project-heading,
+  .final-project-prompt:last-child {
+    grid-column: auto;
+  }
+
+  .final-project-demo,
+  .final-project-publish {
+    padding: 18px;
+  }
+}

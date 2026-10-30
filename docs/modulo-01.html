@@ -58,6 +58,7 @@
             <a href="#kiro" role="tab" aria-selected="false" aria-controls="kiro" tabindex="-1"><span class="nav-number">07</span>Kiro, agente de IA</a>
             <a href="#ai-options" role="tab" aria-selected="false" aria-controls="ai-options" tabindex="-1"><span class="nav-number">08</span>Agentes y modelos de IA</a>
             <a href="#kiro-practice" role="tab" aria-selected="false" aria-controls="kiro-practice" tabindex="-1"><span class="nav-number">09</span>Programar con agentes de IA</a>
+            <a href="#proyecto-final" role="tab" aria-selected="false" aria-controls="proyecto-final" tabindex="-1"><span class="nav-number">10</span>Proyecto final: datos y tablero</a>
           </div>
           <div class="nav-group" role="group" aria-label="Cierre y consulta">
             <p class="nav-group-title">Cierre y consulta</p>
@@ -211,8 +212,9 @@
           <h3>Del entorno listo a programar con apoyo de un agente</h3>
           <p class="agenda-intro">
             En la primera sesi&oacute;n preparas tus herramientas, configuras el proyecto y ejecutas
-            tus primeros ejercicios de Python. En la segunda aplicas lo aprendido con apoyo de un agente
-            y guardas un cambio revisado en GitHub.
+            tus primeros ejercicios de Python. En las primeras dos horas de la segunda instalas y
+            exploras agentes, practicas con un cambio de c&oacute;digo y lo compartes en GitHub. Las dos
+            horas finales corresponden al paso 10: crear y publicar un tablero de datos.
           </p>
           <div class="agenda-grid">
             <article class="agenda-card agenda-card--setup">
@@ -249,11 +251,20 @@
                 <li><span>02</span><div><strong>Plantea una mejora con Kiro</strong><p>Describe una necesidad concreta del proyecto y pide un cambio acotado.</p></div></li>
                 <li><span>03</span><div><strong>Revisa el diff</strong><p>Comprueba qu&eacute; archivos cambiaron y deja solo lo que quieras guardar.</p></div></li>
                 <li><span>04</span><div><strong>Ejecuta y valida</strong><p>Corre el programa desde PyCharm o la terminal y verifica el resultado.</p></div></li>
-                <li><span>05</span><div><strong>Crea un commit</strong><p>Guarda una versi&oacute;n del cambio desde el panel Commit o con Git.</p></div></li>
+                <li><span>05</span><div><strong>Guarda un commit</strong><p>Hazlo desde PyCharm o p&iacute;dele al agente que lo prepare despu&eacute;s de revisar los archivos.</p></div></li>
                 <li><span>06</span><div><strong>Sube el cambio a GitHub</strong><p>Env&iacute;a el commit de la rama <code>DEV</code> con Push.</p></div></li>
               </ol>
               <div class="agenda-outcome"><span>Al cierre</span><strong>Un cambio revisado, validado y compartido en GitHub</strong></div>
             </article>
+          </div>
+          <div class="agenda-capstone" aria-label="Distribuci&oacute;n de las dos horas finales">
+            <div class="agenda-capstone-heading"><span class="timeline-label">Sesi&oacute;n 2 &middot; &uacute;ltimas 2 horas</span><strong>Paso 10: de los datos a un tablero publicado</strong></div>
+            <ol>
+              <li><span>15 min</span><strong>Prepara las herramientas y elige un agente</strong></li>
+              <li><span>30 min</span><strong>Construye el ejemplo de COVID-19 con el grupo</strong></li>
+              <li><span>60 min</span><strong>Crea y publica tu proyecto individual</strong></li>
+              <li><span>15 min</span><strong>Muestra tu enlace y un hallazgo</strong></li>
+            </ol>
           </div>
         </section>
 
@@ -1004,6 +1015,118 @@ pip list</code></pre>
           <div class="kiro-responsibility"><span aria-hidden="true">&#10003;</span><p><strong>El agente propone; t&uacute; decides.</strong> Antes de guardar el cambio, aseg&uacute;rate de poder explicar qu&eacute; se modific&oacute; y c&oacute;mo comprobaste que funciona.</p></div>
         </section>
 
+        <section id="proyecto-final" class="panel final-project-panel">
+          <p class="section-kicker">Paso 10 &middot; Proyecto final</p>
+          <h3>De los datos p&uacute;blicos a un tablero publicado</h3>
+          <p class="support-intro">Trabaja con un agente de IA para explorar un conjunto de datos, responder una pregunta y compartir los resultados en una p&aacute;gina web. Primero construiremos un ejemplo entre todos; despu&eacute;s crear&aacute;s uno propio.</p>
+
+          <div class="final-project-timeline" aria-label="Din&aacute;mica de dos horas">
+            <article><span>15 min</span><strong>Prepara</strong><p>Abre PyCharm, confirma que el entorno <code>RAGLAB</code> funciona y selecciona el agente.</p></article>
+            <article><span>30 min</span><strong>Explora COVID-19</strong><p>Descarga datos filtrados, define una pregunta y construye el tablero con el grupo.</p></article>
+            <article><span>60 min</span><strong>Haz tu proyecto</strong><p>Elige un tema y datos p&uacute;blicos; crea tu an&aacute;lisis y publ&iacute;calo desde tu fork.</p></article>
+            <article><span>15 min</span><strong>Comparte</strong><p>Muestra la URL de tu p&aacute;gina y explica un hallazgo en un minuto.</p></article>
+          </div>
+
+          <div class="final-project-demo">
+            <div>
+              <span class="timeline-label">Ejemplo guiado &middot; COVID-19</span>
+              <h4>Construyamos juntos un tablero de COVID-19</h4>
+              <p>En este ejemplo vas a convertir un CSV en un tablero HTML con ayuda de un agente. Descarga los datos y env&iacute;a los prompts de abajo, en orden, dentro de la misma conversaci&oacute;n de PyCharm. Completa el departamento y el periodo que elegiste. El conjunto tiene m&aacute;s de seis millones de filas, por eso trabajaremos con un filtro.</p>
+              <ol class="steps final-project-demo-steps">
+                <li>Abre el <a href="https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia-/gt2j-8ykr/about_data" target="_blank" rel="noreferrer">conjunto de datos de COVID-19</a>, entra a la vista de datos y revisa las columnas y el periodo cubierto.</li>
+                <li>Usa <strong>Filtrar</strong> para elegir un departamento y un periodo corto. Revisa el n&uacute;mero de filas; si siguen siendo muchas, reduce el periodo.</li>
+                <li>Abre <strong>Exportar</strong> y descarga el resultado como CSV. Si hace falta, crea la carpeta <code>modulo-01/proyectos/demo-covid/datos/</code> y gu&aacute;rdalo como <code>casos_covid.csv</code>.</li>
+                <li>Usaremos esta pregunta: <em>&iquest;C&oacute;mo evolucionaron por mes los casos reportados en [departamento] durante [periodo]?</em> Reemplaza los campos entre corchetes por el filtro que descargaste.</li>
+              </ol>
+            </div>
+            <aside class="final-project-data-note"><strong>Cuida el alcance</strong><p>Analiza totales y tendencias agregadas. No publiques filas individuales del CSV en la p&aacute;gina. Anota el enlace de la fuente, el periodo analizado y las limitaciones del conjunto.</p></aside>
+          </div>
+
+          <div class="final-project-prompt-sequence">
+            <h5>Prompts listos para el ejemplo</h5>
+            <p>Env&iacute;a el primero y revisa el plan del agente. Cuando est&eacute;s de acuerdo, env&iacute;a el segundo para crear los archivos. Despu&eacute;s ejecuta el comando y usa el &uacute;ltimo prompt para revisar el resultado. Reemplaza los campos entre corchetes por los datos de tu descarga.</p>
+            <div class="command-block final-project-prompt">
+              <div class="command-head"><h4>1. Inspecciona el CSV y planea el tablero COVID</h4><button class="copy-button" data-copy>Copiar</button></div>
+              <pre><code>Quiero analizar los casos positivos de COVID-19 en Colombia con el CSV filtrado que guard&eacute; en modulo-01/proyectos/demo-covid/datos/casos_covid.csv. Mi filtro es [departamento] y [periodo]. Inspecciona las columnas reales, identifica la columna de fecha y la de departamento si existen, revisa los tipos de datos y los valores faltantes. No inventes columnas ni muestres filas individuales. Quiero responder: &iquest;c&oacute;mo evolucionaron por mes los casos reportados durante el periodo seleccionado? Prop&oacute;n dos indicadores y dos gr&aacute;ficos que se puedan calcular con las columnas disponibles. Incluye esta fuente: https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia-/gt2j-8ykr/about_data. Resume tambi&eacute;n las limitaciones. No crees ni modifiques archivos todav&iacute;a: expl&iacute;came el plan y espera mi aprobaci&oacute;n.</code></pre>
+            </div>
+            <div class="command-block final-project-prompt">
+              <div class="command-head"><h4>2. Construye el an&aacute;lisis y el tablero para mostrar</h4><button class="copy-button" data-copy>Copiar</button></div>
+              <pre><code>Apruebo el plan. Implem&eacute;ntalo dentro de estas rutas: crea modulo-01/proyectos/demo-covid/analisis.py para analizar con pandas el archivo modulo-01/proyectos/demo-covid/datos/casos_covid.csv, y genera docs/proyectos/demo-covid/index.html con matplotlib y un gr&aacute;fico mensual m&aacute;s otro gr&aacute;fico adecuado a las columnas que encontraste. Guarda los gr&aacute;ficos en docs/proyectos/demo-covid/graficos/ y enl&aacute;zalos con rutas relativas. Muestra el departamento y periodo filtrados, dos indicadores, un hallazgo, la fuente enlazada y las limitaciones. No inventes datos, no incluyas filas individuales, no copies el CSV a docs ni modifiques otros archivos. Al terminar, dime c&oacute;mo ejecutar el an&aacute;lisis y abrir el tablero.</code></pre>
+            </div>
+            <div class="command-block final-project-run-command">
+              <div class="command-head"><h4>3. Ejecuta el an&aacute;lisis desde la ra&iacute;z del repositorio</h4><button class="copy-button" data-copy>Copiar</button></div>
+              <pre><code>python modulo-01/proyectos/demo-covid/analisis.py</code></pre>
+            </div>
+            <div class="command-block final-project-prompt">
+              <div class="command-head"><h4>4. Comprueba los datos y el tablero</h4><button class="copy-button" data-copy>Copiar</button></div>
+              <pre><code>Revisa el an&aacute;lisis y el HTML del tablero COVID. Comprueba que los c&aacute;lculos usen las columnas correctas y el filtro de [departamento] y [periodo], y que los gr&aacute;ficos reflejen los datos del CSV. Verifica que la p&aacute;gina muestre la fuente, el periodo, un hallazgo y las limitaciones, sin filas individuales. Si encuentras errores, expl&iacute;camelos y dime c&oacute;mo corregirlos.</code></pre>
+            </div>
+            <p>Por &uacute;ltimo, abre <code>docs/proyectos/demo-covid/index.html</code> en el navegador y revisa el resultado: los indicadores, los gr&aacute;ficos, la fuente y las limitaciones.</p>
+          </div>
+
+          <div class="final-project-transition"><span class="timeline-label">Despu&eacute;s de la demostraci&oacute;n</span><h4>Ahora crea tu propio tablero</h4><p>Repite el mismo recorrido con un tema que te interese. Durante la hora de trabajo, t&uacute; eliges el conjunto de datos; el agente te acompa&ntilde;a en el an&aacute;lisis y la programaci&oacute;n.</p></div>
+
+          <div class="final-project-minimum">
+            <div class="final-project-heading"><span class="timeline-label">Tu proyecto individual &middot; 60 minutos</span><h4>Elige un tema que te interese</h4><p>Dedica los primeros minutos a encontrar un CSV p&uacute;blico peque&ntilde;o y una pregunta concreta. Si el archivo es grande, f&iacute;ltralo antes de empezar. El objetivo es terminar y publicar una primera versi&oacute;n.</p></div>
+            <div class="final-project-deliverables">
+              <article><span>01</span><strong>Una pregunta</strong><p>Debe poder responderse con las columnas disponibles.</p></article>
+              <article><span>02</span><strong>Dos indicadores</strong><p>Resume medidas que ayuden a responder la pregunta.</p></article>
+              <article><span>03</span><strong>Dos gr&aacute;ficos</strong><p>Generados con pandas y matplotlib para comparar o mostrar tendencias.</p></article>
+              <article><span>04</span><strong>Un hallazgo y un l&iacute;mite</strong><p>Explica qu&eacute; encontraste y qu&eacute; no permiten concluir los datos.</p></article>
+            </div>
+          </div>
+
+          <div class="final-project-student-tips">
+            <article><strong>Escoge un conjunto manejable</strong><p>Busca un CSV descargable sin registro ni clave API. Filtra por fecha o territorio si contiene demasiadas filas.</p></article>
+            <article><strong>Haz una pregunta descriptiva</strong><p>Por ejemplo: &iquest;c&oacute;mo cambia una medida por mes o qu&eacute; categor&iacute;as tienen los valores m&aacute;s altos?</p></article>
+            <article><strong>Verifica antes de publicar</strong><p>Comprueba que los indicadores tengan sentido, cita la fuente y el periodo, y no subas datos sensibles ni el CSV original.</p></article>
+          </div>
+
+          <div class="final-project-prompts">
+            <div class="final-project-heading">
+              <span class="timeline-label">Prompts copiables</span>
+              <h4>Construye el proyecto por etapas</h4>
+              <p>Usa estos prompts en tu propio proyecto y reemplaza los campos entre corchetes con tus rutas, tema, fuente y pregunta.</p>
+            </div>
+            <div class="command-block final-project-prompt">
+              <div class="command-head"><h4>1. Inspecciona los datos y propone un plan</h4><button class="copy-button" data-copy>Copiar</button></div>
+              <pre><code>Quiero crear un tablero de an&aacute;lisis con el archivo CSV que descargu&eacute; en [ruta del archivo]. Primero inspecciona los nombres de las columnas, tipos de datos, cantidad de filas, valores faltantes y posibles duplicados. No muestres ni publiques filas individuales. Ay&uacute;dame a formular una pregunta descriptiva que se pueda responder con estos datos, dos indicadores y dos gr&aacute;ficos sencillos. Resume las limitaciones y la fuente de los datos. No edites archivos todav&iacute;a: expl&iacute;came el plan y espera mi aprobaci&oacute;n.</code></pre>
+            </div>
+            <div class="command-block final-project-prompt">
+              <div class="command-head"><h4>2. Genera el an&aacute;lisis y la p&aacute;gina HTML</h4><button class="copy-button" data-copy>Copiar</button></div>
+              <pre><code>Apruebo el plan. Implementa el an&aacute;lisis con pandas y genera los gr&aacute;ficos con matplotlib. Guarda el script en modulo-01/proyectos/[nombre]/analisis.py y el tablero est&aacute;tico en docs/proyectos/[nombre]/index.html. Guarda los gr&aacute;ficos en docs/proyectos/[nombre]/graficos/ y enl&aacute;zalos con rutas relativas desde el HTML. La p&aacute;gina debe incluir la pregunta, la fuente y el periodo, dos indicadores, dos gr&aacute;ficos, un hallazgo y las limitaciones. No incluyas filas individuales, no copies el CSV a docs ni modifiques archivos fuera de estas carpetas. Al terminar, explica c&oacute;mo ejecutar el an&aacute;lisis y revisar el resultado.</code></pre>
+            </div>
+            <div class="command-block final-project-prompt">
+              <div class="command-head"><h4>3. Comprueba el tablero</h4><button class="copy-button" data-copy>Copiar</button></div>
+              <pre><code>Revisa el script y el tablero que generaste. Comprueba que el an&aacute;lisis use la pregunta acordada, que los indicadores y gr&aacute;ficos correspondan a los datos y que el HTML abra correctamente sin servidor. Verifica que la fuente, el periodo y las limitaciones aparezcan en la p&aacute;gina, y que no se incluyan filas individuales ni el CSV. No hagas commit ni push. Dame los pasos para probarlo localmente y una lista breve de los archivos que debo revisar.</code></pre>
+            </div>
+          </div>
+
+          <div class="final-project-run">
+            <div><span class="timeline-label">Prueba local</span><h4>Genera y abre tu tablero antes de publicarlo</h4><p>Ejecuta el an&aacute;lisis desde la carpeta ra&iacute;z del repositorio. Luego abre el archivo <code>docs/proyectos/[nombre]/index.html</code> en el navegador y confirma que aparezcan los indicadores, los gr&aacute;ficos y la fuente.</p></div>
+            <div class="command-block final-project-run-command">
+              <div class="command-head"><h4>PowerShell o Terminal</h4><button class="copy-button" data-copy>Copiar</button></div>
+              <pre><code>python modulo-01/proyectos/[nombre]/analisis.py</code></pre>
+            </div>
+          </div>
+
+          <div class="final-project-publish">
+            <div>
+              <span class="timeline-label">Publica tu resultado</span>
+              <h4>Publica tu tablero propio desde el fork</h4>
+              <p>El tablero debe quedar en <code>docs/proyectos/[nombre]/index.html</code>. Conserva la p&aacute;gina principal del curso y sube solo el script, los gr&aacute;ficos y el tablero; no agregues el CSV descargado.</p>
+            </div>
+            <ol class="steps">
+              <li>Revisa los archivos con <code>git status</code> y el diff. Confirma el cambio y haz Push de la rama <code>DEV</code> a tu fork.</li>
+              <li>En GitHub, abre <strong>Settings &rarr; Pages</strong>. En <strong>Build and deployment</strong>, elige <strong>Deploy from a branch</strong>, selecciona la rama <code>DEV</code> y la carpeta <code>/docs</code>; guarda la configuraci&oacute;n.</li>
+              <li>Abre la URL que GitHub muestra en esa misma secci&oacute;n y a&ntilde;ade <code>proyectos/[nombre]/</code>. Comprueba que el tablero y sus gr&aacute;ficos carguen.</li>
+            </ol>
+          </div>
+          <p class="hint final-project-pages-link">Consulta la <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_blank" rel="noreferrer">gu&iacute;a oficial para configurar la fuente de GitHub Pages</a> si el repositorio no muestra la opci&oacute;n esperada.</p>
+
+          <div class="final-project-showcase"><strong>Cierre &middot; un minuto por persona</strong><span>Comparte la URL publicada, la pregunta que investigaste y un hallazgo. Menciona tambi&eacute;n una limitaci&oacute;n de los datos.</span></div>
+        </section>
+
         <section id="errores" class="panel">
           <p class="section-kicker">Soporte</p>
           <h3>Si algo se detiene, retoma desde el paso correspondiente</h3>
@@ -1049,14 +1172,15 @@ pip list</code></pre>
 
         <section id="checklist" class="panel">
           <p class="section-kicker">Cierre</p>
-          <h3>Checklist: del espacio de trabajo al cambio compartido</h3>
+          <h3>Checklist: del espacio de trabajo al proyecto publicado</h3>
           <p class="support-intro">El módulo queda completo cuando puedes recorrer y explicar este flujo:</p>
           <ol class="closing-checklist">
             <li><span>01</span><div><strong>Proyecto listo</strong><p>Git configurado; fork de <code>RAGLAB</code> creado en tu cuenta y abierto en PyCharm desde la rama <code>DEV</code>.</p></div></li>
             <li><span>02</span><div><strong>Entorno preparado</strong><p>Miniconda instalado, entorno <code>RAGLAB</code> creado desde <code>RAGLAB.yml</code> y seleccionado como intérprete de PyCharm.</p></div></li>
             <li><span>03</span><div><strong>Python comprobado</strong><p>Ejecutaste los cuatro ejercicios: hola Python, variables y tipos, condicionales y bucles, y funciones.</p></div></li>
-            <li><span>04</span><div><strong>Cambio comprendido y validado</strong><p>Con Kiro, planteaste una mejora concreta, revisaste el plan y el diff, ejecutaste el script y comprobaste los resultados esperados.</p></div></li>
+            <li><span>04</span><div><strong>Cambio comprendido y validado</strong><p>Con un agente, planteaste una mejora concreta, revisaste el plan y el diff, ejecutaste el script y comprobaste los resultados esperados.</p></div></li>
             <li><span>05</span><div><strong>Trabajo guardado y compartido</strong><p>Creaste un commit que puedes explicar y lo subiste a tu fork en GitHub con Push desde <code>DEV</code>.</p></div></li>
+            <li><span>06</span><div><strong>Proyecto final publicado</strong><p>Analizaste datos p&uacute;blicos, creaste un tablero HTML con su fuente y limitaciones, lo publicaste en GitHub Pages y compartiste un hallazgo.</p></div></li>
           </ol>
           <div class="closing-note"><strong>Recuerda:</strong> el agente propone el cambio; tú verificas que cumple el requerimiento antes de guardarlo y compartirlo.</div>
         </section>

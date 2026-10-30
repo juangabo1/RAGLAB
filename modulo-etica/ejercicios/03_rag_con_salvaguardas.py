@@ -248,7 +248,7 @@ def main() -> None:
             for puntaje, f in r["seleccion"]:
                 print(f"    {puntaje:5.2f}  [{f['id']}] {f['documento']}")
             for fid, motivo in r["descartados"][:6]:
-                print(f"     ✗    [{fid}] descartado: {motivo}")
+                print(f"     [DESCARTADO] [{fid}] motivo: {motivo}")
             print("    diagnóstico:", diagnostico(r))
         if "--llm" in sys.argv:
             enviar_a_llm(construir_prompt(pregunta, r, aislar=True))

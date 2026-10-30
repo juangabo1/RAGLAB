@@ -142,7 +142,7 @@ def correr(titulo: str, politica: Politica | None, preguntar=False) -> None:
             print("  Límite de pasos alcanzado: el agente se detiene.")
             break
         estado, motivo = ejecutar_con_politicas(accion, sesion, politica, preguntar)
-        marca = "✓" if estado == "ejecutada" else "✗"
+        marca = "OK" if estado == "ejecutada" else "BLOQUEADA"
         detalle = f"  <- {motivo}" if motivo else ""
         print(f"  {paso}. {marca} {accion['herramienta']:<22} {json.dumps(accion['args'], ensure_ascii=False)}{detalle}")
     ejecutadas = [b for b in sesion.bitacora if b["estado"] == "ejecutada"]

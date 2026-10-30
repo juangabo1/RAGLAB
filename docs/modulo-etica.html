@@ -528,6 +528,18 @@ body { background: #f7f2e9; color: var(--tinta); }
         <p>Con “Con ajuste” (umbral 7 para afroamericanos y 5 para blancos) se igualan los falsos positivos y negativos, pero el valor predictivo se separa. ¿Es aceptable un umbral distinto según la raza? En la UE, el art. 5 del AI Act prohíbe predecir delitos <em>solo</em> a partir de perfiles. ¿Debió usarse este sistema en primer lugar?</p>
       </div>
 
+      <div class="lab-guide">
+        <div class="lab-guide-head"><span>Opción PyCharm</span><strong>Instala las dependencias en el entorno RAGLAB</strong></div>
+        <p>Los laboratorios de esta página funcionan en el navegador sin instalaciones. Si vas a ejecutar los scripts, abre Anaconda Prompt o una terminal con Conda, sitúate en la raíz del repositorio y copia estos comandos:</p>
+        <div class="command-block" data-copy-scope>
+          <div class="command-head"><div><span class="command-eyebrow">Desde la raíz del repositorio</span><h4>Activa el entorno e instala los requisitos</h4></div><button class="copy-button" data-copy>Copiar</button></div>
+          <pre><code>conda activate RAGLAB
+python -m pip install -r modulo-etica/requirements.txt
+python -c "import pandas, sklearn, fairlearn; print('Dependencias listas')"</code></pre>
+        </div>
+        <p>La instalación agrega <code>fairlearn</code>, que habilita la etapa de mitigación del modelo en el ejercicio 2. El último comando confirma que las tres bibliotecas están disponibles en el entorno activo.</p>
+      </div>
+
       <div class="command-block" data-copy-scope>
         <div class="command-head">
           <div><span class="command-eyebrow">O ejecútalo en PyCharm</span><h4>Auditoría y mitigación en tres etapas</h4></div>
