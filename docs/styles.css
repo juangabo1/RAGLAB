@@ -4300,3 +4300,35 @@ pre {
     grid-template-columns: 1fr;
   }
 }
+
+/* Navegación superior con tres páginas: evita cortes de línea en pantallas pequeñas */
+.course-top-nav a {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .course-header-inner {
+    gap: 6px;
+  }
+
+  .course-brand {
+    width: 108px;
+    height: 42px;
+    flex-shrink: 0;
+  }
+
+  .course-top-nav a {
+    padding: 7px 7px;
+    font-size: 0.72rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .course-brand {
+    width: 92px;
+  }
+
+  .course-top-nav a {
+    padding: 6px 5px;
+  }
+}
