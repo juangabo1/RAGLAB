@@ -3826,6 +3826,136 @@ pre {
   margin-bottom: 22px;
 }
 
+.ai-options-panel {
+  --ai-options-accent: #28735e;
+  --ai-options-soft: #e8f4ee;
+  position: relative;
+  background:
+    radial-gradient(ellipse at 100% 0, rgba(40, 115, 94, 0.08), transparent 36%),
+    var(--panel);
+}
+
+.ai-options-panel > .section-kicker {
+  color: var(--ai-options-accent);
+}
+
+.ai-options-panel > h3 {
+  max-width: 900px;
+  margin-bottom: 12px;
+}
+
+.ai-options-panel > .support-intro {
+  max-width: 900px;
+  margin: 0 0 22px;
+}
+
+.ai-options-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.ai-options-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-top: 3px solid #77ad96;
+  border-radius: 20px;
+  background: linear-gradient(155deg, #f2f8f4, rgba(255, 255, 255, 0.94) 55%);
+  box-shadow: 0 12px 28px rgba(29, 35, 48, 0.05);
+}
+
+.ai-options-card .timeline-label,
+.ai-options-workflow .timeline-label {
+  color: var(--ai-options-accent);
+}
+
+.ai-options-card h4,
+.ai-options-workflow h4 {
+  margin: 5px 0 10px;
+  font-size: 1.08rem;
+}
+
+.ai-options-card ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.58;
+}
+
+.ai-options-card strong {
+  color: var(--ink);
+}
+
+.ai-options-workflow {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 22px;
+  align-items: start;
+  margin-top: 28px;
+}
+
+.ai-options-workflow > div:first-child {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.ai-options-workflow .steps {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.ai-options-gallery {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+}
+
+.ai-options-image-card {
+  width: min(100%, 520px);
+  margin: 0;
+  padding: 12px;
+  border-radius: 18px;
+}
+
+.ai-options-image-card img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.ai-options-image-card figcaption {
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.ai-options-note {
+  margin: 20px 0 8px;
+  padding: 15px 18px;
+  border-left: 3px solid #77ad96;
+  border-radius: 0 12px 12px 0;
+  background: #edf7f2;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.58;
+}
+
+.ai-options-note strong {
+  color: var(--ink);
+}
+
+.ai-options-links {
+  margin-top: 12px;
+}
+
 .kiro-intro {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.9fr);
@@ -4019,6 +4149,10 @@ pre {
   align-items: stretch;
 }
 
+.kiro-stage-card--wide {
+  grid-column: 1 / -1;
+}
+
 .kiro-config-timeline .kiro-stage-card {
   grid-column: 1 / -1;
 }
@@ -4048,6 +4182,134 @@ pre {
 .kiro-stage-card .steps {
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.kiro-install-proof {
+  max-width: 720px;
+  margin: 18px 0 0;
+}
+
+.kiro-install-proof img {
+  width: 100%;
+  border: 1px solid #303030;
+  border-radius: 8px;
+  background: #0c0c0c;
+}
+
+.kiro-install-proof figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.kiro-validation-commands {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.kiro-validation-command {
+  min-width: 0;
+  padding: 14px;
+  border-radius: 16px;
+  background: #1f2430;
+  color: #eff3ff;
+}
+
+.kiro-validation-command > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.kiro-validation-command strong {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.82rem;
+}
+
+.kiro-validation-command strong span {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 8px;
+  background: rgba(120, 207, 166, 0.15);
+  color: #9de0bd;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.63rem;
+}
+
+.kiro-validation-command .copy-button {
+  flex: 0 0 auto;
+  padding: 6px 11px;
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #f4f6fa;
+  font-size: 0.72rem;
+}
+
+.kiro-validation-command pre {
+  margin: 12px 0 0;
+  color: #e4e9f4;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.kiro-validation-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.kiro-config-support {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+  gap: 18px;
+  align-items: start;
+  margin-top: 20px;
+}
+
+.kiro-config-guide {
+  min-width: 0;
+  margin: 0;
+  padding: 12px;
+  border-radius: 18px;
+}
+
+.kiro-config-guide img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.kiro-config-guide figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.kiro-path-commands {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+.kiro-path-commands > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.kiro-path-commands .kiro-validation-command pre {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
 }
 
 .kiro-install-gallery {
@@ -4246,6 +4508,10 @@ pre {
 }
 
 @media (max-width: 1100px) {
+  .ai-options-workflow {
+    grid-template-columns: 1fr;
+  }
+
   .kiro-intro {
     grid-template-columns: 1fr;
   }
@@ -4258,13 +4524,30 @@ pre {
     grid-template-columns: 1fr;
   }
 
+  .kiro-config-support {
+    grid-template-columns: 1fr;
+  }
+
   .kiro-validation-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kiro-validation-commands {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 560px) {
   .kiro-intro {
+    padding: 18px;
+  }
+
+  .ai-options-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-options-card,
+  .ai-options-workflow > div:first-child {
     padding: 18px;
   }
 
@@ -4297,6 +4580,10 @@ pre {
   }
 
   .kiro-install-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .kiro-validation-commands {
     grid-template-columns: 1fr;
   }
 }
