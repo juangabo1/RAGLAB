@@ -5055,3 +5055,210 @@ pre {
     padding: 18px;
   }
 }
+
+.openrouter-panel {
+  --openrouter-accent: #caff00;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 100% 0, rgba(202, 255, 0, 0.11), transparent 35%),
+    var(--panel);
+}
+
+.openrouter-panel > .section-kicker {
+  color: #637b00;
+}
+
+.openrouter-intro,
+.openrouter-purpose,
+.openrouter-setup-heading,
+.openrouter-env-note,
+.openrouter-run-guide {
+  margin-top: 22px;
+}
+
+.openrouter-intro {
+  max-width: 880px;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.openrouter-access-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0 0;
+}
+
+.openrouter-access-link a {
+  display: inline-flex;
+  align-items: center;
+  padding: 11px 17px;
+  border-radius: 999px;
+  background: #d6ff00;
+  color: #152000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.openrouter-access-link a:hover {
+  background: #c2eb00;
+}
+
+.openrouter-access-link span {
+  color: var(--muted);
+}
+
+.openrouter-purpose,
+.openrouter-run-guide {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.openrouter-purpose > div {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.openrouter-purpose strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.08rem;
+}
+
+.openrouter-purpose p,
+.openrouter-run-guide p {
+  margin-bottom: 0;
+  line-height: 1.65;
+}
+
+.openrouter-setup-heading {
+  margin-bottom: 14px;
+}
+
+.openrouter-setup-heading h4,
+.openrouter-run-guide h4 {
+  margin: 6px 0 4px;
+}
+
+.openrouter-setup-heading p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.openrouter-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.openrouter-image-card {
+  margin: 0;
+  padding: 14px;
+}
+
+.openrouter-image-card img {
+  width: 100%;
+  border: 1px solid rgba(20, 28, 30, 0.12);
+}
+
+.openrouter-image-card figcaption {
+  line-height: 1.6;
+}
+
+.openrouter-env-instructions h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+}
+
+.openrouter-env-instructions h4 span {
+  display: inline-grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 50%;
+  background: #d6ff00;
+  color: #152000;
+  font-size: 0.9rem;
+}
+
+.openrouter-env-instructions ol {
+  margin: 0;
+  padding-left: 22px;
+  line-height: 1.55;
+}
+
+.openrouter-env-code {
+  margin: 12px 0;
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.openrouter-env-code h5 {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.openrouter-env-code pre {
+  margin: 10px 0 0;
+  overflow-x: auto;
+}
+
+.openrouter-env-note {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) 1.1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.openrouter-env-note pre {
+  margin: 9px 0 0;
+  padding: 14px;
+  border-radius: 12px;
+  overflow-x: auto;
+  background: #eef7e6;
+  color: #18220b;
+}
+
+.openrouter-env-note p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.openrouter-run-guide {
+  align-items: center;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.openrouter-run-command {
+  margin: 0;
+  border-radius: 16px;
+}
+
+.openrouter-free-note,
+.openrouter-doc-link {
+  line-height: 1.65;
+}
+
+@media (max-width: 800px) {
+  .openrouter-purpose,
+  .openrouter-gallery,
+  .openrouter-run-guide,
+  .openrouter-env-note {
+    grid-template-columns: 1fr;
+  }
+}

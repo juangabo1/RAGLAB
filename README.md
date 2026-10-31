@@ -55,4 +55,4 @@ La primera ejecución de los ejercicios 1 y 2 descarga los datos públicos de CO
 
 ## Publicar el tablero final
 
-El paso 10 de la guía explica cómo guardar el tablero y sus gráficos en `docs/proyectos/<nombre>/`, subir los cambios a la rama `DEV` de tu fork y seleccionar esa rama y la carpeta `/docs` como fuente de GitHub Pages. La página principal del curso permanece en `docs/index.html`.
+El paso 11 de la guía explica cómo guardar el tablero y sus gráficos en `docs/proyectos/<nombre>/`, subir los cambios a la rama `DEV` de tu fork y seleccionar esa rama y la carpeta `/docs` como fuente de GitHub Pages. La página principal del curso permanece en `docs/index.html`.
